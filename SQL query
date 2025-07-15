@@ -1,0 +1,81 @@
+-- Create a temporary table to store customer address details and associated regions
+WITH address_info AS (
+  SELECT 
+    customer.CustomerID,  
+    customer_address.AddressID,  
+    address.StateProvinceID,  
+    state_province.Name AS state,  
+    state_province.CountryRegionCode,  
+    sales_territory.TerritoryID,  
+    sales_territory.Name AS Region  
+  FROM `adwentureworks_db.customer` AS customer
+  JOIN `adwentureworks_db.customeraddress` AS customer_address
+    ON customer.CustomerID = customer_address.CustomerID
+  JOIN `adwentureworks_db.address` AS address
+    ON customer_address.AddressID = address.AddressID
+  JOIN `adwentureworks_db.stateprovince` AS state_province
+    ON address.StateProvinceID = state_province.StateProvinceID
+  JOIN `adwentureworks_db.countryregion` AS country_region
+    ON state_province.CountryRegionCode = country_region.CountryRegionCode
+  JOIN `adwentureworks_db.salesterritory` AS sales_territory
+    ON customer.TerritoryID = sales_territory.TerritoryID
+),
+
+-- Aggregate sales data by month, region, and country
+sales_summary AS (
+  SELECT 
+    LAST_DAY(CAST(sales.OrderDate AS DATE), MONTH) AS order_month,  
+    address_info.CountryRegionCode, 
+    address_info.Region, 
+    COUNT(sales.SalesOrderID) AS number_orders,  
+    COUNT(DISTINCT sales.CustomerID) AS number_customers,  
+    COUNT(DISTINCT sales.SalesPersonID) AS no_salesPersons,  
+    ROUND(SUM(sales.TotalDue)) AS Total_w_tax 
+  FROM `adwentureworks_db.salesorderheader` AS sales
+  JOIN address_info
+    ON sales.CustomerID = address_info.CustomerID
+  GROUP BY order_month, address_info.Region, address_info.CountryRegionCode
+),
+
+-- Extract highest tax rate per province
+tax AS (
+  SELECT 
+    state_province.StateProvinceID,
+    state_province.CountryRegionCode,
+    MAX(salestaxrate.TaxRate) AS highest_tax  -- Selects the highest tax rate per province
+  FROM `adwentureworks_db.stateprovince` AS state_province
+  -- LEFT JOIN prevents missing provinces from being excluded, ensuring all provinces are considered
+  LEFT JOIN `adwentureworks_db.salestaxrate` AS salestaxrate
+    ON state_province.StateProvinceID = salestaxrate.StateProvinceID
+  GROUP BY state_province.StateProvinceID, state_province.CountryRegionCode
+),
+
+-- Compute country-level tax summaries
+tax_summary AS (
+  SELECT 
+    CountryRegionCode,
+    ROUND(AVG(highest_tax), 2) AS mean_tax_rate,  -- Calculates the average tax rate per country
+    ROUND(COUNT(highest_tax) / COUNT(StateProvinceID), 2) AS perc_provinces_w_tax  -- Computes the percentage of provinces with tax data
+  FROM tax
+  GROUP BY CountryRegionCode
+)
+
+-- Final Query: Rank regions and include tax details
+SELECT 
+  sales_summary.order_month,
+  sales_summary.CountryRegionCode,
+  sales_summary.Region,
+  sales_summary.number_orders,
+  sales_summary.number_customers,
+  sales_summary.no_salesPersons,
+  sales_summary.Total_w_tax,
+  tax_summary.mean_tax_rate,  -- Displays country-wide average tax rate
+  tax_summary.perc_provinces_w_tax,  -- Shows the percentage of provinces with tax data
+  RANK() OVER (PARTITION BY sales_summary.CountryRegionCode ORDER BY sales_summary.Total_w_tax DESC) AS country_sales_rank,  -- Ranks regions by revenue within each country
+  SUM(sales_summary.Total_w_tax) OVER (PARTITION BY sales_summary.CountryRegionCode, sales_summary.Region ORDER BY sales_summary.order_month ASC) AS cumulative_sum  -- Computes cumulative revenue over time per region
+FROM sales_summary
+-- LEFT JOIN ensures all countries appear, even if missing tax details
+LEFT JOIN tax_summary  
+  ON sales_summary.CountryRegionCode = tax_summary.CountryRegionCode
+WHERE sales_summary.CountryRegionCode = 'US'  -- Filters for the United States only
+ORDER BY country_sales_rank;

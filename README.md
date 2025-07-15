@@ -6,7 +6,7 @@ Welcome! This repository showcases a set of projects I completed as part of my d
 ---
 
 ## 🚴 AdventureWorks_by_Ugne_Bajoriniene.pbix  
-**📂 [Download Dashboard (PBIX)](AdventureWorks_by_Ugne_Bajoriniene.pbix)**  
+  
 A fully interactive Power BI dashboard where I practiced:
 
 - Creating and formatting custom KPIs  
@@ -18,7 +18,7 @@ This helped me improve logic and layout for presenting business-critical informa
 ---
 
 ## 🎤 Presentations & Soft Skills Dashboard.pbix  
-**📂 [Download Presentation Dashboard (PBIX)](Presentations%20%26%20Soft%20Skills%20Dashboard.pbix)**  
+  
 A project combining SQL-driven analysis and soft skills. I used BigQuery to explore product performance over time and regions, focusing on bike seasonality and categories. I then designed a 10-minute presentation tailored for the **Sales Department**.
 
 **📽️ [View Presentation on Google Slides](https://docs.google.com/presentation/d/1Bn1COpnpCISWYHuq_b_wAhcTEzGeGoU-SUoGbU-uN4Y/edit?usp=sharing)**
@@ -26,7 +26,7 @@ A project combining SQL-driven analysis and soft skills. I used BigQuery to expl
 ---
 
 ## 🧾 SQL_query_AdventureWorks.sql  
-**📂 [Download SQL Query](SQL_query_AdventureWorks.sql)**  
+  
 This is one of the core SQL queries I developed during this sprint. It demonstrates:
 
 - Joins across multiple tables  

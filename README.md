@@ -1,60 +1,60 @@
 🧠 Data Analytics Portfolio – AdventureWorks Projects
-By: Ugne Bajoriniene
+By: Ugnė Bajorinienė
 
-Welcome! This repository showcases a set of projects I completed as part of my data analytics learning journey at Turing College. Each file reflects my growing skills in SQL, Power BI, and data storytelling — as well as my ability to turn complex data into meaningful insights.
+Welcome! This repository showcases a set of projects I completed as part of my data analytics learning journey at Turing College.
+Each file reflects my growing skills in SQL, Power BI, and data storytelling — as well as my ability to turn complex data into meaningful insights.
 
 🚴 AdventureWorks_by_Ugne_Bajoriniene.pbix
 A fully interactive Power BI dashboard where I practiced:
 
 Creating and formatting custom KPIs
 
-Using slicers and map to build an intuitive user experience
+Using slicers and a map to build an intuitive user experience
 
-This project helped me improve my design and logic in building dashboards that are both user-friendly and insightful.
+This project helped me improve my dashboard logic and layout to create visuals that are both insightful and user-friendly.
 
 🎤 Presentations & Soft Skills Dashboard.pbix
-In this project, I combined SQL-driven data exploration with storytelling and presentation skills.
+In this project, I combined SQL-driven data exploration with storytelling and business presentation skills.
 
-I used BigQuery to extract sales data and discovered seasonal and regional patterns in bike sales, especially across touring, road, and mountain bikes. I built a visual dashboard and turned it into a 10-minute Sales Department presentation.
+I used BigQuery to extract sales data and discovered seasonal and regional patterns in bike sales — focusing on touring, road, and mountain bikes. I built a Power BI dashboard and delivered two tailored presentations.
 
 🔗 View Presentations:
-Executive Leadership Presentation (https://docs.google.com/presentation/d/1Bn1COpnpCISWYHuq_b_wAhcTEzGeGoU-SUoGbU-uN4Y/edit?usp=sharing)
+Executive Leadership Presentation (5 min)
+
+(Sales Department Presentation coming soon)
 
 🧾 SQL_query_AdventureWorks.sql
-One of the core SQL queries I developed and used in the dashboard project. It includes:
+This is one of the core SQL queries I developed for the dashboards. It includes:
 
 Joins across multiple tables
 
-Aggregation and grouping
+Aggregation, filtering, and window functions
 
-Window functions
+Use of CTEs (Common Table Expressions)
 
-Temporary table (CTE) creation
-
-Business-focused filtering and logic.
+Tailored logic to extract sales insights for business decisions
 
 📊 AdventureWorks Spreadsheet Overview
-https://docs.google.com/spreadsheets/d/1okSbHkP-37i-wh2_XhqwruxQsNYrrxB6I8gt6MR4F6w/edit?usp=sharing
+This earlier spreadsheet-based project helped me:
 
-This earlier project helped me:
+Get familiar with the AdventureWorks dataset
 
-Get familiar with the dataset
+Use Google Sheets for cleaning, filtering, and visualizing data
 
-Use Google Sheets to clean, filter, and visualize sales data
-
-Practice chart building and data summarization without BI tools
+Build charts and summarize insights without BI tools
 
 💬 Why This Matters
 These projects reflect how I combine:
 
-🧩 Curiosity and logic to find patterns in data
+🧩 Curiosity and logic to uncover patterns in data
 
-🎯 Communication skills to share insights clearly
+🎯 Clear communication to share insights that matter
 
-📈 Practical tools like SQL, spreadsheets, and Power BI to deliver value
+📈 Hands-on tools like SQL, Google Sheets, and Power BI to solve problems
 
-I’m eager to continue learning and take on real-world data challenges,so if you have any thoughts, feedback, or opportunities, I’d love to hear from you!
+I'm eager to apply these skills in real-world challenges. If you're a hiring manager, collaborator, or mentor — your feedback is very welcome!
 
-📫 Let’s connect
-You can find me on LinkedIn (www.linkedin.com/in/ugnė-bajorinienė-963a7933b) or reach out directly via Email ugnebajoriniene@gmail.com Feedback and collaboration are always welcome!
+📫 Let’s Connect
+LinkedIn: Ugnė Bajorinienė
 
+📧 Email: ugnebajoriniene@gmail.com

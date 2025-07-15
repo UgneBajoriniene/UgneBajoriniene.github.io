@@ -1,26 +1,60 @@
-Monthly Sales Analysis Project https://docs.google.com/spreadsheets/d/1h4lhdcdLrWzsNMoMJ5aEbl4wXcSNEEGqbvqaWkgcv8Y/edit?usp=sharing
-This project helped me practice working with spreadsheet data and improve my skills in data analysis using Google Sheets / Excel. It involved exploring a dataset to answer key business questions and extract meaningful insights.
+🧠 Data Analytics Portfolio – AdventureWorks Projects
+By: Ugne Bajoriniene
 
-What I did in this project
-Got familiar with the dataset and its structure
+Welcome! This repository showcases a set of projects I completed as part of my data analytics learning journey at Turing College. Each file reflects my growing skills in SQL, Power BI, and data storytelling — as well as my ability to turn complex data into meaningful insights.
 
-Practiced data cleaning and organization
+🚴 AdventureWorks_by_Ugne_Bajoriniene.pbix
+A fully interactive Power BI dashboard where I practiced:
 
-Created formulas and charts to analyze trends and patterns
+Creating and formatting custom KPIs
 
-Answered specific business questions based on the data
+Using slicers and map to build an intuitive user experience
 
-Questions answered
-Monthly sales trend — How sales changed over each month
+This project helped me improve my design and logic in building dashboards that are both user-friendly and insightful.
 
-Online vs non-online orders evaluation — Comparing sales from online and offline channels
+🎤 Presentations & Soft Skills Dashboard.pbix
+In this project, I combined SQL-driven data exploration with storytelling and presentation skills.
 
-Delivery performance trend — Tracking delivery times and punctuality over time
+I used BigQuery to extract sales data and discovered seasonal and regional patterns in bike sales, especially across touring, road, and mountain bikes. I built a visual dashboard and turned it into a 10-minute Sales Department presentation.
 
-Top salesperson by sales, by volume — Identifying the best performers based on revenue and units sold
+🔗 View Presentations:
+Executive Leadership Presentation (https://docs.google.com/presentation/d/1Bn1COpnpCISWYHuq_b_wAhcTEzGeGoU-SUoGbU-uN4Y/edit?usp=sharing)
 
-Top countries — Highlighting countries with the highest sales
+🧾 SQL_query_AdventureWorks.sql
+One of the core SQL queries I developed and used in the dashboard project. It includes:
 
-Top sales reasons — Understanding the main drivers behind sales success
+Joins across multiple tables
 
-This project strengthened my skills in data manipulation, analysis, and visualization using spreadsheet tools, forming a foundation for more advanced data work.
+Aggregation and grouping
+
+Window functions
+
+Temporary table (CTE) creation
+
+Business-focused filtering and logic.
+
+📊 AdventureWorks Spreadsheet Overview
+https://docs.google.com/spreadsheets/d/1okSbHkP-37i-wh2_XhqwruxQsNYrrxB6I8gt6MR4F6w/edit?usp=sharing
+
+This earlier project helped me:
+
+Get familiar with the dataset
+
+Use Google Sheets to clean, filter, and visualize sales data
+
+Practice chart building and data summarization without BI tools
+
+💬 Why This Matters
+These projects reflect how I combine:
+
+🧩 Curiosity and logic to find patterns in data
+
+🎯 Communication skills to share insights clearly
+
+📈 Practical tools like SQL, spreadsheets, and Power BI to deliver value
+
+I’m eager to continue learning and take on real-world data challenges,so if you have any thoughts, feedback, or opportunities, I’d love to hear from you!
+
+📫 Let’s connect
+You can find me on LinkedIn (www.linkedin.com/in/ugnė-bajorinienė-963a7933b) or reach out directly via Email ugnebajoriniene@gmail.com Feedback and collaboration are always welcome!
+

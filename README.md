@@ -1,57 +1,68 @@
-🧠 Data Analytics Portfolio – AdventureWorks Projects
-By: Ugnė Bajorinienė
+# Data Analytics Portfolio – AdventureWorks Projects  
+**By: Ugnė Bajorinienė**
 
-Welcome! This repository showcases a set of projects I completed as part of my data analytics journey at Turing College.
-Each file reflects my growing skills in SQL, Power BI, and data storytelling — and how I turn complex data into actionable insights.
+Welcome! This repository showcases a set of projects I completed as part of my data analytics journey at [Turing College](https://www.turingcollege.com/).  
+Each file reflects my growing skills in SQL, Power BI, and data storytelling, how I turn complex data into actionable insights.
 
-🚴 AdventureWorks_by_Ugne_Bajoriniene.pbix
+---
+
+## 🚴 AdventureWorks_by_Ugne_Bajoriniene.pbix  
+
 A fully interactive Power BI dashboard where I practiced:
 
-Creating and formatting custom KPIs
+- Creating and formatting custom KPIs  
+- Using slicers and map to build an intuitive user experience  
+- Improving dashboard layout and logic for better insights  
 
-Using slicers and a map for intuitive filtering
+---
 
-Designing visuals that are both insightful and user-friendly
+## 🎤 Presentations & Soft Skills Dashboard.pbix  
 
-🎤 Presentations & Soft Skills Dashboard.pbix
 In this project, I combined SQL-driven data exploration with storytelling and presentation skills.
-Using BigQuery, I extracted sales data to analyze regional and seasonal trends in bike sales, including touring, road, and mountain bikes.
 
-I built a Power BI dashboard and created a 10-minute presentation for the Sales Department, focused on stabilizing growth through deeper product-seasonality understanding.
+I used BigQuery to extract sales data and discovered seasonal and regional patterns in bike sales, especially across touring, road, and mountain bikes.  
+I then built a Power BI dashboard and presented my insights to a simulated Sales Department audience.
 
-🎯 View the Sales Department Presentation
+**View the Sales Department Presentation:**  
+[👉 Click here to open the Google Slides](https://docs.google.com/presentation/d/1Bn1COpnpCISWYHuq_b_wAhcTEzGeGoU-SUoGbU-uN4Y/edit?usp=sharing)
 
-🧾 SQL_query_AdventureWorks.sql
-A key SQL query I developed during analysis. It includes:
+---
 
-Joins across multiple tables
+## 🧾 SQL_query_AdventureWorks.sql  
 
-Use of CTEs, aggregations, and window functions
+One of the core SQL queries I developed and used in my dashboard analysis. It includes:
 
-Filters designed for business-relevant results
+- Joins across multiple tables  
+- Aggregation and grouping  
+- Use of CTEs and window functions  
+- Business-focused filtering and logic  
 
-📊 AdventureWorks Spreadsheet Overview
-An earlier project using Google Sheets to:
+---
 
-Explore the dataset
+## 📊 [AdventureWorks Spreadsheet Overview (Google Sheets)](https://docs.google.com/spreadsheets/d/1okSbHkP-37i-wh2_XhqwruxQsNYrrxB6I8gt6MR4F6w/edit?usp=sharing)  
 
-Practice manual data cleaning and chart creation
+An earlier project where I:
 
-Summarize insights without BI tools
+- Explored the dataset  
+- Practiced manual data cleaning and chart creation  
+- Summarized insights without using BI tools  
 
-💬 Why This Matters
+---
+
+## Why This Matters  
+
 These projects reflect how I combine:
 
-🧩 Curiosity and logical thinking to spot trends and outliers
+- Curiosity and logical thinking to explore real data  
+- Clear communication to share insights effectively  
+- Practical tools like SQL, Google Sheets, and Power BI to deliver value  
 
-🎯 Clear communication to tell a story behind the numbers
+I’m excited to keep learning and apply these skills in real-world business settings.  
+If you have feedback or opportunities I’d love to hear from you!
 
-📈 Practical tools — SQL, spreadsheets, and Power BI — to deliver value
+---
 
-I’m excited to keep learning and apply these skills in real business settings.
-If you have feedback, questions, or opportunities — I’d love to hear from you!
+## 📫 Let’s Connect  
 
-📫 Let’s Connect
-LinkedIn: Ugnė Bajorinienė
-
-📧 Email: ugnebajoriniene@gmail.com
+- [LinkedIn Profile](https://www.linkedin.com/in/ugnė-bajorinienė-963a7933b)  
+- Email: [ugnebajoriniene@gmail.com](mailto:ugnebajoriniene@gmail.com)
